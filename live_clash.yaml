@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261004110023 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261004110024 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,57 +10,97 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- type: vmess
+- ws-opts:
+    headers:
+      Host: jmp1.907737.xyz
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+  alterId: 0
   uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  type: vmess
   name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  ws-opts:
+  network: ws
+  port: 443
+  server: yg1.ygkkk.dpdns.org
+  cipher: auto
+  tls: true
+  udp: true
+- ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-  tls: true
-  cipher: auto
-  udp: true
-  server: yg1.ygkkk.dpdns.org
-  network: ws
   alterId: 0
-  port: 443
-- type: vmess
   uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  type: vmess
   name: 未知 VMESS-369 | free-nodes
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-  tls: true
-  cipher: auto
-  server: yg1.ygkkk.dpdns.org
-  network: ws
-  alterId: 0
-  port: 443
   servername: jmp1.907737.xyz
-- type: vmess
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  server: sbgfgov.vip6.wogacnmnagfwgov.com
-  port: 11206
+  network: ws
+  port: 443
+  server: yg1.ygkkk.dpdns.org
+  cipher: auto
+  tls: true
+- alterId: 2
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
+  type: vmess
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  port: 11206
+  server: sbgfgov.vip6.wogacnmnagfwgov.com
   cipher: auto
   udp: true
-- type: vless
-  name: 🇺🇸_US_美国->🇯🇵_JP_日本
-  server: jeffsubs.com
-  port: 443
-  udp: true
-  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
-  encryption: none
-  tls: true
-  servername: jeffsubs.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
+- ws-opts:
     path: /nnuyws
     headers:
       Host: jeffsubs.com
+  udp: true
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
+  type: vless
+  name: 🇺🇸_US_美国->🇯🇵_JP_日本
+  servername: jeffsubs.com
+  network: ws
+  encryption: none
+  port: 443
+  server: jeffsubs.com
+  tls: true
+  client-fingerprint: chrome
+- type: vless
+  name: 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
+  server: support.zoom.us
+  port: 8443
+  udp: true
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  encryption: none
+  tls: true
+  servername: primelinelk.me
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- type: vless
+  name: 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
+  server: support.zoom.us
+  port: 8443
+  udp: true
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  encryption: none
+  tls: true
+  servername: primelinelk.me
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  server: free.nadun.store
+  port: 443
+  udp: true
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  encryption: none
+  tls: true
+  client-fingerprint: chrome
+  network: ws
 proxy-groups:
 - name: GLOBAL
   type: select
@@ -70,6 +110,9 @@ proxy-groups:
   - 未知 VMESS-369 | free-nodes
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇺🇸_US_美国->🇯🇵_JP_日本
+  - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
+  - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
   default-selected: 🇭🇰 Hong Kong, Hong Kong | [BL]
 - name: Fine
   type: select
@@ -80,6 +123,9 @@ proxy-groups:
   - 未知 VMESS-369 | free-nodes
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇺🇸_US_美国->🇯🇵_JP_日本
+  - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
+  - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
   default-selected: AUTO
 - name: AUTO
   type: url-test
@@ -88,6 +134,9 @@ proxy-groups:
   - 未知 VMESS-369 | free-nodes
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇺🇸_US_美国->🇯🇵_JP_日本
+  - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
+  - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
