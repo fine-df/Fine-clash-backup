@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261004110022 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261004110023 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,255 +10,66 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  network: ws
-  udp: true
-  ws-opts:
-    headers:
-      Host: jmp1.907737.xyz
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-  port: 443
+- type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
   name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  alterId: 0
+  ws-opts:
+    headers:
+      Host: jmp1.907737.xyz
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
   tls: true
-  server: yg1.ygkkk.dpdns.org
   cipher: auto
-  type: vmess
-- uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
-  network: tcp
-  reality-opts:
-    public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
-    short-id: ae64c9b46bff174a
   udp: true
-  servername: uk1.sky-vault.top
-  flow: xtls-rprx-vision
-  encryption: none
-  port: 443
-  client-fingerprint: safari
-  name: 🇬🇧 United Kingdom, Solihull | [BL] [3f20e63f]
-  tls: true
-  server: 91.208.92.210
-  type: vless
-- uuid: 04baafc3-0fea-4a8a-bfa8-22d759ed82ca
-  network: tcp
-  reality-opts:
-    public-key: Duc0G2dfUivCCBsAkZSY58E_qGkSTTZYcESGMDvXR0g
-    short-id: 2ad5dc4b
-  udp: true
-  servername: www.tradingview.com
-  flow: xtls-rprx-vision
-  encryption: none
-  port: 443
-  client-fingerprint: safari
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  tls: true
-  server: 78.17.32.23
-  type: vless
-- uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
-  network: tcp
-  reality-opts:
-    public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
-    short-id: ae64c9b46bff174a
-  udp: true
-  servername: uk1.sky-vault.top
-  flow: xtls-rprx-vision
-  encryption: none
-  port: 443
-  client-fingerprint: qq
-  name: 🇬🇧 United Kingdom, Solihull | [BL] [f593b511]
-  tls: true
-  server: 91.208.92.210
-  type: vless
-- uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  server: yg1.ygkkk.dpdns.org
   network: ws
-  udp: true
-  servername: fr.api-music-fa.com
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-  encryption: none
-  port: 2053
-  client-fingerprint: qq
-  name: 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
-  tls: true
-  server: 8.47.69.0
-  type: vless
-- uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  network: ws
-  udp: true
-  servername: fr.api-music-fa.com
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-  encryption: none
-  port: 2053
-  client-fingerprint: edge
-  name: 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
-  tls: true
-  server: 8.47.69.0
-  type: vless
-- uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
-  network: ws
-  udp: true
-  servername: argo6.5671234.xyz
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
-  encryption: none
+  alterId: 0
   port: 443
-  client-fingerprint: chrome
-  name: 🇹🇼 Taiwan, Taipei | [BL] [37851830]
-  tls: true
-  server: argo6.5671234.xyz
-  type: vless
-- uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
-  network: ws
-  udp: true
-  servername: argo6.5671234.xyz
-  ws-opts:
-    path: /e8e2cecb6188f7fb
-    headers:
-      Host: argo6.5671234.xyz
-  encryption: none
-  port: 443
-  name: 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
-  tls: true
-  server: argo6.5671234.xyz
-  type: vless
-- uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  network: ws
-  servername: jmp1.907737.xyz
+- type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  name: 未知 VMESS-369 | free-nodes
   ws-opts:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-  port: 443
-  name: 未知 VMESS-369 | free-nodes
-  alterId: 0
   tls: true
-  server: yg1.ygkkk.dpdns.org
   cipher: auto
-  type: vmess
-- uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  server: yg1.ygkkk.dpdns.org
   network: ws
+  alterId: 0
+  port: 443
+  servername: jmp1.907737.xyz
+- type: vmess
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  server: sbgfgov.vip6.wogacnmnagfwgov.com
+  port: 11206
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
   udp: true
-  ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
-  encryption: none
-  port: 8443
-  name: 未知 VLESS-180 | free-nodes
-  tls: true
-  server: www.large-files.info
-  type: vless
-- uuid: 95003356-20f9-4c84-a21f-2f9c1fc285eb
-  network: grpc
-  reality-opts:
-    public-key: pvXuNe35fkSbA-CVmh6_b3ADAXLY8tBONjnwE8HM8yY
-    short-id: 397c81bed08f3f78
-  udp: true
-  grpc-opts:
-    grpc-service-name: f3d967fe8981
-  servername: www.chip.de
-  encryption: none
-  port: 25095
-  client-fingerprint: chrome
-  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
-  tls: true
-  server: de12.h1cloud.net
-  type: vless
 - type: vless
-  name: 🇫🇷 France, Roubaix | 🌐 | [BL] [f599cf1c]
-  server: 8.47.69.0
-  port: 2053
-  udp: true
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  encryption: none
-  tls: true
-  servername: fr.api-music-fa.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- type: vless
-  name: 🇫🇷 France, Roubaix | 🌐 | [BL] [29a05bd2]
-  server: 8.47.69.0
-  port: 2053
-  udp: true
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  encryption: none
-  tls: true
-  servername: vless.api-music-fa.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- type: vless
-  name: 🇳🇱 The Netherlands | [*CIDR] VK
-  server: 37.139.42.221
+  name: 🇺🇸_US_美国->🇯🇵_JP_日本
+  server: jeffsubs.com
   port: 443
   udp: true
-  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
   encryption: none
   tls: true
-  servername: apis.stroymatdv.cc
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /amsws
-    headers:
-      Host: apis.stroymatdv.cc
-- type: vless
-  name: 🇺🇸 United States, Chicago | [BL]
-  server: 91.103.140.187
-  port: 443
-  udp: true
-  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
-  encryption: none
-  tls: true
-  servername: q4x8.vpnpolar.online
-  network: ws
-  ws-opts:
-    path: /beeline
-    headers:
-      Host: q4x8.vpnpolar.online
-- type: trojan
-  name: 🇦🇪 United Arab Emirates, Abu Dhabi | [BL]
-  server: nl.zhabulik.ru
-  port: 443
-  udp: true
-  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
-  tls: true
-  servername: nl.zhabulik.ru
+  servername: jeffsubs.com
   client-fingerprint: chrome
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /nnuyws
+    headers:
+      Host: jeffsubs.com
 proxy-groups:
 - name: GLOBAL
   type: select
   proxies:
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
-  - 🇬🇧 United Kingdom, Solihull | [BL] [3f20e63f]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇬🇧 United Kingdom, Solihull | [BL] [f593b511]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
-  - 🇹🇼 Taiwan, Taipei | [BL] [37851830]
-  - 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
   - 未知 VMESS-369 | free-nodes
-  - 未知 VLESS-180 | free-nodes
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [f599cf1c]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [29a05bd2]
-  - 🇳🇱 The Netherlands | [*CIDR] VK
-  - 🇺🇸 United States, Chicago | [BL]
-  - 🇦🇪 United Arab Emirates, Abu Dhabi | [BL]
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇺🇸_US_美国->🇯🇵_JP_日本
   default-selected: 🇭🇰 Hong Kong, Hong Kong | [BL]
 - name: Fine
   type: select
@@ -266,41 +77,17 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
-  - 🇬🇧 United Kingdom, Solihull | [BL] [3f20e63f]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇬🇧 United Kingdom, Solihull | [BL] [f593b511]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
-  - 🇹🇼 Taiwan, Taipei | [BL] [37851830]
-  - 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
   - 未知 VMESS-369 | free-nodes
-  - 未知 VLESS-180 | free-nodes
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [f599cf1c]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [29a05bd2]
-  - 🇳🇱 The Netherlands | [*CIDR] VK
-  - 🇺🇸 United States, Chicago | [BL]
-  - 🇦🇪 United Arab Emirates, Abu Dhabi | [BL]
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇺🇸_US_美国->🇯🇵_JP_日本
   default-selected: AUTO
 - name: AUTO
   type: url-test
   proxies:
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
-  - 🇬🇧 United Kingdom, Solihull | [BL] [3f20e63f]
-  - 🇳🇱 The Netherlands, Amsterdam | [BL]
-  - 🇬🇧 United Kingdom, Solihull | [BL] [f593b511]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
-  - 🇹🇼 Taiwan, Taipei | [BL] [37851830]
-  - 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
   - 未知 VMESS-369 | free-nodes
-  - 未知 VLESS-180 | free-nodes
-  - 🇩🇪 Germany, Frankfurt am Main | [BL]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [f599cf1c]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL] [29a05bd2]
-  - 🇳🇱 The Netherlands | [*CIDR] VK
-  - 🇺🇸 United States, Chicago | [BL]
-  - 🇦🇪 United Arab Emirates, Abu Dhabi | [BL]
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇺🇸_US_美国->🇯🇵_JP_日本
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
