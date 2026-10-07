@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261004110020 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261004110021 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,232 +10,301 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  tls: true
-  ws-opts:
+- ws-opts:
     headers:
       Host: jmp1.907737.xyz
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
   type: vmess
-  server: yg1.ygkkk.dpdns.org
-  udp: true
-  port: 443
   cipher: auto
-  network: ws
-  alterId: 0
-- type: vless
-  name: 🇬🇧 United Kingdom, Solihull | [BL] [3f20e63f]
-  server: 91.208.92.210
   port: 443
-  udp: true
-  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
-  encryption: none
   tls: true
-  servername: uk1.sky-vault.top
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
+  udp: true
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
+  server: yg1.ygkkk.dpdns.org
+  alterId: 0
+  network: ws
+- reality-opts:
     public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
     short-id: ae64c9b46bff174a
-  network: tcp
-- type: vless
-  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
-  server: 78.17.32.23
-  port: 443
-  udp: true
-  uuid: 04baafc3-0fea-4a8a-bfa8-22d759ed82ca
-  encryption: none
-  tls: true
-  servername: www.tradingview.com
+  type: vless
   flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
+  name: 🇬🇧 United Kingdom, Solihull | [BL] [3f20e63f]
+  servername: uk1.sky-vault.top
+  server: 91.208.92.210
   client-fingerprint: safari
-  reality-opts:
+  network: tcp
+  encryption: none
+- reality-opts:
     public-key: Duc0G2dfUivCCBsAkZSY58E_qGkSTTZYcESGMDvXR0g
     short-id: 2ad5dc4b
-  network: tcp
-- type: vless
-  name: 🇬🇧 United Kingdom, Solihull | [BL] [f593b511]
-  server: 91.208.92.210
-  port: 443
-  udp: true
-  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
-  encryption: none
-  tls: true
-  servername: uk1.sky-vault.top
+  type: vless
   flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
+  port: 443
+  tls: true
+  udp: true
+  uuid: 04baafc3-0fea-4a8a-bfa8-22d759ed82ca
+  name: 🇳🇱 The Netherlands, Amsterdam | [BL]
+  servername: www.tradingview.com
+  server: 78.17.32.23
+  client-fingerprint: safari
+  network: tcp
+  encryption: none
+- reality-opts:
     public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
     short-id: ae64c9b46bff174a
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
+  name: 🇬🇧 United Kingdom, Solihull | [BL] [f593b511]
+  servername: uk1.sky-vault.top
+  server: 91.208.92.210
+  client-fingerprint: qq
   network: tcp
-- type: vless
+  encryption: none
+- reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
   name: 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [15fa7aae]
-  server: 144.31.123.247
-  port: 443
-  udp: true
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
-  encryption: none
-  tls: true
   servername: nl-root.sworkingvpn.com
-  flow: xtls-rprx-vision
+  server: 144.31.123.247
   client-fingerprint: firefox
-  reality-opts:
+  network: tcp
+  encryption: none
+- reality-opts:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
-  network: tcp
-- type: vless
-  name: 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [8d3d3c6e]
-  server: 144.31.123.247
+  type: vless
+  flow: xtls-rprx-vision
   port: 443
+  tls: true
   udp: true
   uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
-  encryption: none
-  tls: true
+  name: 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [8d3d3c6e]
   servername: nl-root.sworkingvpn.com
-  flow: xtls-rprx-vision
+  server: 144.31.123.247
   client-fingerprint: chrome
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
   network: tcp
-- type: vless
-  name: 🇳🇴 Norway | [*CIDR]
-  server: 176.108.252.139
-  port: 9881
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
   encryption: none
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: ios
-  reality-opts:
+- reality-opts:
     public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
     short-id: aabb
-  network: grpc
+  type: vless
+  port: 9881
+  tls: true
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  name: 🇳🇴 Norway | [*CIDR]
+  servername: dl.google.com
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- type: vless
-  name: 🇳🇱 The Netherlands | 🌐 [*CIDR]
-  server: 45.139.26.179
-  port: 443
-  udp: true
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  server: 176.108.252.139
+  client-fingerprint: ios
+  network: grpc
   encryption: none
+- reality-opts:
+    public-key: 9Pg_ecqFPMfzOvJrmxE05FmLUDXbY9Mo1r2MgxFzYEQ
+    short-id: 4b523a98e1bbd15b
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
   tls: true
-  servername: ads.x5.ru
+  udp: true
+  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
+  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [960ca81d]
+  servername: po.skfv-mirror.ru
+  server: 144.31.241.80
   client-fingerprint: safari
-  reality-opts:
+  network: tcp
+  encryption: none
+- reality-opts:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
+  name: 🇪🇪 Estonia, Tallinn | [BL] [64105df3]
+  servername: ee-root.sworkingvpn.com
+  server: 95.85.242.166
+  client-fingerprint: firefox
+  network: tcp
+  encryption: none
+- reality-opts:
+    public-key: 9Pg_ecqFPMfzOvJrmxE05FmLUDXbY9Mo1r2MgxFzYEQ
+    short-id: 4b523a98e1bbd15b
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
+  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [fba755ff]
+  servername: po.skfv-mirror.ru
+  server: 144.31.241.80
+  client-fingerprint: chrome
+  network: tcp
+  encryption: none
+- reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
+  name: 🇪🇪 Estonia, Tallinn | [BL] [5815cb22]
+  servername: ee-root.sworkingvpn.com
+  server: 95.85.242.166
+  client-fingerprint: chrome
+  network: tcp
+  encryption: none
+- reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  name: 🇵🇹 Portugal, Viana do Castelo | [BL] [6547be5d]
+  servername: pt-root.sworkingvpn.com
+  server: 31.129.22.141
+  client-fingerprint: firefox
+  network: tcp
+  encryption: none
+- reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  type: vless
+  flow: xtls-rprx-vision
+  port: 443
+  tls: true
+  udp: true
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  name: 🇵🇹 Portugal, Viana do Castelo | [BL] [edb645ba]
+  servername: pt-root.sworkingvpn.com
+  server: 31.129.22.141
+  client-fingerprint: edge
+  network: tcp
+  encryption: none
+- type: vless
+  name: 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
+  server: 8.47.69.0
+  port: 2053
+  udp: true
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  encryption: none
+  tls: true
+  servername: fr.api-music-fa.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- type: vless
+  name: 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
+  server: 8.47.69.0
+  port: 2053
+  udp: true
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  encryption: none
+  tls: true
+  servername: fr.api-music-fa.com
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- type: vless
+  name: 🇹🇼 Taiwan, Taipei | [BL] [37851830]
+  server: argo6.5671234.xyz
+  port: 443
+  udp: true
+  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  encryption: none
+  tls: true
+  servername: argo6.5671234.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /e8e2cecb6188f7fb
+    headers:
+      Host: argo6.5671234.xyz
+- type: vless
+  name: 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
+  server: argo6.5671234.xyz
+  port: 443
+  udp: true
+  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  encryption: none
+  tls: true
+  servername: argo6.5671234.xyz
+  network: ws
+  ws-opts:
+    path: /e8e2cecb6188f7fb
+    headers:
+      Host: argo6.5671234.xyz
+- ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+  type: vmess
+  cipher: auto
+  port: 443
+  tls: true
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  name: 未知 VMESS-369 | free-nodes
+  servername: jmp1.907737.xyz
+  server: yg1.ygkkk.dpdns.org
+  alterId: 0
+  network: ws
+- type: vless
+  name: 未知 VLESS-180 | free-nodes
+  server: www.large-files.info
+  port: 8443
+  udp: true
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  encryption: none
+  tls: true
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+- type: vless
+  name: 🇩🇪 Germany, Frankfurt am Main | [BL]
+  server: de12.h1cloud.net
+  port: 25095
+  udp: true
+  uuid: 95003356-20f9-4c84-a21f-2f9c1fc285eb
+  encryption: none
+  tls: true
+  servername: www.chip.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: pvXuNe35fkSbA-CVmh6_b3ADAXLY8tBONjnwE8HM8yY
+    short-id: 397c81bed08f3f78
   network: grpc
   grpc-opts:
-    grpc-service-name: api
-- type: vless
-  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [960ca81d]
-  server: 144.31.241.80
-  port: 443
-  udp: true
-  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
-  encryption: none
-  tls: true
-  servername: po.skfv-mirror.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 9Pg_ecqFPMfzOvJrmxE05FmLUDXbY9Mo1r2MgxFzYEQ
-    short-id: 4b523a98e1bbd15b
-  network: tcp
-- type: vless
-  name: 🇪🇪 Estonia, Tallinn | [BL] [64105df3]
-  server: 95.85.242.166
-  port: 443
-  udp: true
-  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
-  encryption: none
-  tls: true
-  servername: ee-root.sworkingvpn.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-  network: tcp
-- type: vless
-  name: 🇵🇱 Poland, Warsaw | 🌐 | [BL] [fba755ff]
-  server: 144.31.241.80
-  port: 443
-  udp: true
-  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
-  encryption: none
-  tls: true
-  servername: po.skfv-mirror.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9Pg_ecqFPMfzOvJrmxE05FmLUDXbY9Mo1r2MgxFzYEQ
-    short-id: 4b523a98e1bbd15b
-  network: tcp
-- type: vless
-  name: 🇪🇪 Estonia, Tallinn | [BL] [5815cb22]
-  server: 95.85.242.166
-  port: 443
-  udp: true
-  uuid: 2b781b4a-5942-0018-a7f3-5a07b7b488c1
-  encryption: none
-  tls: true
-  servername: ee-root.sworkingvpn.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-  network: tcp
-- type: vless
-  name: 🇵🇹 Portugal, Viana do Castelo | [BL] [6547be5d]
-  server: 31.129.22.141
-  port: 443
-  udp: true
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
-  encryption: none
-  tls: true
-  servername: pt-root.sworkingvpn.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-  network: tcp
-- type: vless
-  name: 🇵🇹 Portugal, Viana do Castelo | [BL] [edb645ba]
-  server: 31.129.22.141
-  port: 443
-  udp: true
-  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
-  encryption: none
-  tls: true
-  servername: pt-root.sworkingvpn.com
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
-    short-id: 15bcc0a77c3cacdf
-  network: tcp
-- type: vless
-  name: 🇮🇹 Italy | [*CIDR]
-  server: 185.147.26.57
-  port: 443
-  udp: true
-  uuid: 2b781b4a-5942-0017-a7f3-5a07b7b488c1
-  encryption: none
-  tls: true
-  servername: pro-br-gen.sworkingvpn.com
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: qB4kX0ku3vRfvd4Ftwedbsj7m2bUmKdXFqKA0Ks-gmM
-    short-id: 15bcc0a77c3cacdf
-  network: tcp
+    grpc-service-name: f3d967fe8981
 proxy-groups:
 - name: GLOBAL
   type: select
@@ -248,14 +317,19 @@ proxy-groups:
   - 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [15fa7aae]
   - 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [8d3d3c6e]
   - 🇳🇴 Norway | [*CIDR]
-  - 🇳🇱 The Netherlands | 🌐 [*CIDR]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [960ca81d]
   - 🇪🇪 Estonia, Tallinn | [BL] [64105df3]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [fba755ff]
   - 🇪🇪 Estonia, Tallinn | [BL] [5815cb22]
   - 🇵🇹 Portugal, Viana do Castelo | [BL] [6547be5d]
   - 🇵🇹 Portugal, Viana do Castelo | [BL] [edb645ba]
-  - 🇮🇹 Italy | [*CIDR]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
+  - 🇹🇼 Taiwan, Taipei | [BL] [37851830]
+  - 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
+  - 未知 VMESS-369 | free-nodes
+  - 未知 VLESS-180 | free-nodes
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   default-selected: 🇭🇰 Hong Kong, Hong Kong | [BL]
 - name: Fine
   type: select
@@ -269,14 +343,19 @@ proxy-groups:
   - 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [15fa7aae]
   - 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [8d3d3c6e]
   - 🇳🇴 Norway | [*CIDR]
-  - 🇳🇱 The Netherlands | 🌐 [*CIDR]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [960ca81d]
   - 🇪🇪 Estonia, Tallinn | [BL] [64105df3]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [fba755ff]
   - 🇪🇪 Estonia, Tallinn | [BL] [5815cb22]
   - 🇵🇹 Portugal, Viana do Castelo | [BL] [6547be5d]
   - 🇵🇹 Portugal, Viana do Castelo | [BL] [edb645ba]
-  - 🇮🇹 Italy | [*CIDR]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
+  - 🇹🇼 Taiwan, Taipei | [BL] [37851830]
+  - 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
+  - 未知 VMESS-369 | free-nodes
+  - 未知 VLESS-180 | free-nodes
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   default-selected: AUTO
 - name: AUTO
   type: url-test
@@ -288,14 +367,19 @@ proxy-groups:
   - 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [15fa7aae]
   - 🇳🇱 The Netherlands, Amsterdam (Amsterdam-Centrum) | [BL] [8d3d3c6e]
   - 🇳🇴 Norway | [*CIDR]
-  - 🇳🇱 The Netherlands | 🌐 [*CIDR]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [960ca81d]
   - 🇪🇪 Estonia, Tallinn | [BL] [64105df3]
   - 🇵🇱 Poland, Warsaw | 🌐 | [BL] [fba755ff]
   - 🇪🇪 Estonia, Tallinn | [BL] [5815cb22]
   - 🇵🇹 Portugal, Viana do Castelo | [BL] [6547be5d]
   - 🇵🇹 Portugal, Viana do Castelo | [BL] [edb645ba]
-  - 🇮🇹 Italy | [*CIDR]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL] [363ebc57]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL] [c5e5f551]
+  - 🇹🇼 Taiwan, Taipei | [BL] [37851830]
+  - 🇹🇼 Taiwan, Taipei | [BL] [51919ad3]
+  - 未知 VMESS-369 | free-nodes
+  - 未知 VLESS-180 | free-nodes
+  - 🇩🇪 Germany, Frankfurt am Main | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
