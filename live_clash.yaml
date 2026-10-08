@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261004110024 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261004110025 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,109 +10,304 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- ws-opts:
-    headers:
-      Host: jmp1.907737.xyz
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-  alterId: 0
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  type: vmess
-  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  network: ws
-  port: 443
-  server: yg1.ygkkk.dpdns.org
-  cipher: auto
-  tls: true
+- network: ws
   udp: true
-- ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+  server: yg1.ygkkk.dpdns.org
+  ws-opts:
     headers:
       Host: jmp1.907737.xyz
-  alterId: 0
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  type: vmess
-  name: 未知 VMESS-369 | free-nodes
-  servername: jmp1.907737.xyz
-  network: ws
-  port: 443
-  server: yg1.ygkkk.dpdns.org
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
   cipher: auto
+  port: 443
   tls: true
-- alterId: 2
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
   type: vmess
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  port: 11206
+- udp: true
   server: sbgfgov.vip6.wogacnmnagfwgov.com
   cipher: auto
+  port: 11206
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  type: vmess
+- network: ws
   udp: true
-- ws-opts:
+  server: jeffsubs.com
+  ws-opts:
     path: /nnuyws
     headers:
       Host: jeffsubs.com
-  udp: true
-  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
-  type: vless
-  name: 🇺🇸_US_美国->🇯🇵_JP_日本
   servername: jeffsubs.com
-  network: ws
-  encryption: none
   port: 443
-  server: jeffsubs.com
   tls: true
   client-fingerprint: chrome
-- type: vless
-  name: 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
-  server: support.zoom.us
-  port: 8443
-  udp: true
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
+  name: 🇺🇸_US_美国->🇯🇵_JP_日本
+  type: vless
   encryption: none
-  tls: true
+- network: ws
+  udp: true
+  server: support.zoom.us
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
   servername: primelinelk.me
+  port: 8443
+  tls: true
   client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- type: vless
-  name: 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
-  server: support.zoom.us
-  port: 8443
-  udp: true
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  name: 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
+  type: vless
   encryption: none
-  tls: true
-  servername: primelinelk.me
-  client-fingerprint: chrome
-  network: ws
+- network: ws
+  udp: true
+  server: support.zoom.us
   ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-- type: vless
-  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  servername: primelinelk.me
+  port: 8443
+  tls: true
+  client-fingerprint: chrome
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  name: 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
+  type: vless
+  encryption: none
+- network: ws
+  udp: true
   server: free.nadun.store
   port: 443
-  udp: true
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  encryption: none
   tls: true
   client-fingerprint: chrome
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
+  type: vless
+  encryption: none
+- type: vless
+  name: 🇫🇷 France, Roubaix | 🌐 | [BL]
+  server: 8.47.69.0
+  port: 2053
+  udp: true
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  encryption: none
+  tls: true
+  servername: fr.api-music-fa.com
   network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- type: vless
+  name: 美国(yudou99.com 玉豆分享)
+  server: 8.47.69.0
+  port: 2053
+  udp: true
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  encryption: none
+  tls: true
+  servername: vless.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- type: vless
+  name: 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
+  server: www.large-files.info
+  port: 8443
+  udp: true
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  encryption: none
+  tls: true
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [4bb1b8be]
+  server: 178.239.117.24
+  port: 443
+  udp: true
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  encryption: none
+  tls: true
+  servername: asia.csmaster.site
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: asia.csmaster.site
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [7dd610da]
+  server: 47.251.95.178
+  port: 443
+  udp: true
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  encryption: none
+  tls: true
+  servername: asia.csmaster.site
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: asia.csmaster.site
+- type: vless
+  name: 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  server: 104.16.111.193
+  port: 443
+  udp: true
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  encryption: none
+  tls: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- type: vless
+  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
+  server: 104.17.70.206
+  port: 2096
+  udp: true
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  encryption: none
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- type: vless
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c26b2dc2]
+  server: 45.147.199.13
+  port: 443
+  udp: true
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  encryption: none
+  tls: true
+  servername: asia.csmaster.site
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    headers:
+      Host: asia.csmaster.site
+- type: vless
+  name: 🇹🇭 Thailand, Thap Sakae | [BL] [7cd4ab15]
+  server: 104.16.10.2
+  port: 443
+  udp: true
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  encryption: none
+  tls: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- type: vless
+  name: 🇹🇭 Thailand, Thap Sakae | [BL] [ea01fa45]
+  server: 104.18.26.90
+  port: 443
+  udp: true
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  encryption: none
+  tls: true
+  servername: v2ray.simspeedup.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- type: vless
+  name: 🇺🇸 United States, Wilmington | [BL] [35ef285a]
+  server: 13.115.139.162
+  port: 443
+  udp: true
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  encryption: none
+  tls: true
+  servername: x.m-90.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- type: vless
+  name: 🇺🇸 United States, Wilmington | [BL] [5452b075]
+  server: 13.231.221.179
+  port: 443
+  udp: true
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  encryption: none
+  tls: true
+  servername: x.m-90.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- type: vless
+  name: 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
+  server: 35.78.243.103
+  port: 443
+  udp: true
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  encryption: none
+  tls: true
+  servername: x.m-90.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- type: vless
+  name: 🇺🇸 United States, Los Angeles | [BL]
+  server: s490.kukuss.top
+  port: 33414
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  encryption: none
+  tls: true
+  servername: u695098u5cabc3b2s489.gogocs.xyz
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
 proxy-groups:
 - name: GLOBAL
   type: select
   proxies:
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
-  - 未知 VMESS-369 | free-nodes
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
-  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL]
+  - 美国(yudou99.com 玉豆分享)
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [4bb1b8be]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [7dd610da]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c26b2dc2]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [7cd4ab15]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [ea01fa45]
+  - 🇺🇸 United States, Wilmington | [BL] [35ef285a]
+  - 🇺🇸 United States, Wilmington | [BL] [5452b075]
+  - 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
+  - 🇺🇸 United States, Los Angeles | [BL]
   default-selected: 🇭🇰 Hong Kong, Hong Kong | [BL]
 - name: Fine
   type: select
@@ -120,23 +315,49 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
-  - 未知 VMESS-369 | free-nodes
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
-  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL]
+  - 美国(yudou99.com 玉豆分享)
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [4bb1b8be]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [7dd610da]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c26b2dc2]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [7cd4ab15]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [ea01fa45]
+  - 🇺🇸 United States, Wilmington | [BL] [35ef285a]
+  - 🇺🇸 United States, Wilmington | [BL] [5452b075]
+  - 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
+  - 🇺🇸 United States, Los Angeles | [BL]
   default-selected: AUTO
 - name: AUTO
   type: url-test
   proxies:
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
-  - 未知 VMESS-369 | free-nodes
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
-  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
+  - 🇫🇷 France, Roubaix | 🌐 | [BL]
+  - 美国(yudou99.com 玉豆分享)
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [4bb1b8be]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [7dd610da]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
+  - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c26b2dc2]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [7cd4ab15]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [ea01fa45]
+  - 🇺🇸 United States, Wilmington | [BL] [35ef285a]
+  - 🇺🇸 United States, Wilmington | [BL] [5452b075]
+  - 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
+  - 🇺🇸 United States, Los Angeles | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
