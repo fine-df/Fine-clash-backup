@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261004110026 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261004110027 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,157 +10,213 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- server: yg1.ygkkk.dpdns.org
-  udp: true
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  cipher: auto
-  port: 443
-  type: vmess
-  tls: true
+- alterId: 0
+  server: yg1.ygkkk.dpdns.org
   name: 🇭🇰 Hong Kong, Hong Kong | [BL]
-  alterId: 0
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
   ws-opts:
     headers:
       Host: jmp1.907737.xyz
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-  network: ws
-- server: sbgfgov.vip6.wogacnmnagfwgov.com
+  type: vmess
+  tls: true
   udp: true
+  cipher: auto
+  network: ws
+  port: 443
+- alterId: 2
+  server: sbgfgov.vip6.wogacnmnagfwgov.com
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  type: vmess
+  udp: true
   cipher: auto
   port: 11206
-  type: vmess
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  alterId: 2
-- server: jeffsubs.com
-  udp: true
-  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
-  port: 443
-  type: vless
-  tls: true
-  name: 🇺🇸_US_美国->🇯🇵_JP_日本
-  ws-opts:
-    path: /nnuyws
-    headers:
-      Host: jeffsubs.com
-  network: ws
-  client-fingerprint: chrome
-  servername: jeffsubs.com
-  encryption: none
 - server: support.zoom.us
-  udp: true
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  port: 8443
-  type: vless
-  tls: true
   name: 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  client-fingerprint: safari
   ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-  network: ws
-  client-fingerprint: safari
-  servername: primelinelk.me
-  encryption: none
-- server: support.zoom.us
-  udp: true
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  port: 8443
   type: vless
   tls: true
+  udp: true
+  servername: primelinelk.me
+  network: ws
+  port: 8443
+  encryption: none
+- server: support.zoom.us
   name: 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  client-fingerprint: chrome
   ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-  network: ws
-  client-fingerprint: chrome
+  type: vless
+  tls: true
+  udp: true
   servername: primelinelk.me
+  network: ws
+  port: 8443
   encryption: none
 - server: free.nadun.store
-  udp: true
+  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
   uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  port: 443
+  client-fingerprint: chrome
   type: vless
   tls: true
-  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
+  udp: true
   network: ws
-  client-fingerprint: chrome
+  port: 443
   encryption: none
-- server: 104.16.111.193
+- server: support.zoom.us
+  name: 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  client-fingerprint: ios
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+  type: vless
+  tls: true
+  udp: true
+  servername: primelinelk.me
+  network: ws
+  port: 8443
+  encryption: none
+- server: support.zoom.us
+  name: 🇸🇬 Singapore | 🌐 | [BL] [d0f24798]
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  client-fingerprint: edge
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+  type: vless
+  tls: true
+  udp: true
+  servername: primelinelk.me
+  network: ws
+  port: 8443
+  encryption: none
+- type: vless
+  name: 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
+  server: support.zoom.us
+  port: 8443
+  udp: true
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  encryption: none
+  tls: true
+  servername: primelinelk.me
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- type: vless
+  name: 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
+  server: support.zoom.us
+  port: 8443
+  udp: true
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  encryption: none
+  tls: true
+  servername: primelinelk.me
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- type: vless
+  name: 🇹🇭 Thailand, Thap Sakae | [BL]
+  server: 104.16.10.185
+  port: 443
   udp: true
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  port: 443
-  type: vless
+  encryption: none
   tls: true
-  name: 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  servername: v2ray.simspeedup.com
+  network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-  network: ws
-  servername: v2ray.simspeedup.com
-  encryption: none
-- server: 104.17.70.206
+- type: vless
+  name: 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
+  server: 170.114.46.6
+  port: 8443
   udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  port: 2096
-  type: vless
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  encryption: none
   tls: true
-  name: 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-  network: ws
+  servername: primelinelk.me
   client-fingerprint: chrome
-  servername: free-server.techsonic.dev
-  encryption: none
-- type: vless
-  name: 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
-  server: support.zoom.us
-  port: 8443
-  udp: true
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  encryption: none
-  tls: true
-  servername: primelinelk.me
-  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
 - type: vless
-  name: 🇸🇬 Singapore | 🌐 | [BL] [d0f24798]
-  server: support.zoom.us
-  port: 8443
-  udp: true
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  encryption: none
-  tls: true
-  servername: primelinelk.me
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- type: vless
-  name: 🇳🇱 The Netherlands, Eygelshoven | [BL]
-  server: 217.60.24.36
+  name: 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
+  server: 217.60.178.61
   port: 443
   udp: true
-  uuid: 40781fd4-c7df-4aeb-bd5a-ecfa3ba7b841
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   encryption: none
   tls: true
-  servername: cipher961.filebeam.website
+  servername: fi-s-1.pythonmakemigreat.wiki
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
-    short-id: a7c31f92
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: 78f97d82e16aaad6
   network: tcp
+- type: vless
+  name: 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
+  encryption: none
+  tls: true
+  servername: w2p6.vpnpolar.online
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /beeline
+    headers:
+      Host: w2p6.vpnpolar.online
+- type: vless
+  name: 🇺🇸 United States, Buffalo | [BL]
+  server: 198.12.124.74
+  port: 10829
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  encryption: none
+  tls: true
+  servername: u695098u5e20ed1cs709.gogocs.xyz
+  flow: xtls-rprx-vision
+  network: tcp
+- type: vless
+  name: 🇫🇷 France, Strasbourg | [BL]
+  server: cip.navid.lat
+  port: 443
+  udp: true
+  uuid: 33f13fd5-1553-4574-ac1a-432d2d762cbe
+  encryption: none
+  tls: true
+  servername: frc.navid.lat
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /webdl
+    headers:
+      Host: frc.navid.lat
 proxy-groups:
 - name: GLOBAL
   type: select
@@ -168,15 +224,19 @@ proxy-groups:
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
   - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
-  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
   - 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
   - 🇸🇬 Singapore | 🌐 | [BL] [d0f24798]
-  - 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
+  - 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
+  - 🇹🇭 Thailand, Thap Sakae | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
+  - 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
+  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  - 🇺🇸 United States, Buffalo | [BL]
+  - 🇫🇷 France, Strasbourg | [BL]
   default-selected: 🇭🇰 Hong Kong, Hong Kong | [BL]
 - name: Fine
   type: select
@@ -185,30 +245,38 @@ proxy-groups:
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
   - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
-  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
   - 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
   - 🇸🇬 Singapore | 🌐 | [BL] [d0f24798]
-  - 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
+  - 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
+  - 🇹🇭 Thailand, Thap Sakae | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
+  - 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
+  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  - 🇺🇸 United States, Buffalo | [BL]
+  - 🇫🇷 France, Strasbourg | [BL]
   default-selected: AUTO
 - name: AUTO
   type: url-test
   proxies:
   - 🇭🇰 Hong Kong, Hong Kong | [BL]
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇺🇸_US_美国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
   - 🇸🇬 Singapore, Singapore | 🌐 | [BL] [c34fa588]
-  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
-  - 🇸🇬 Singapore, Singapore (Outram) | 🌐 | [BL]
   - 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
   - 🇸🇬 Singapore | 🌐 | [BL] [d0f24798]
-  - 🇳🇱 The Netherlands, Eygelshoven | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
+  - 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
+  - 🇹🇭 Thailand, Thap Sakae | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
+  - 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
+  - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
+  - 🇺🇸 United States, Buffalo | [BL]
+  - 🇫🇷 France, Strasbourg | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
