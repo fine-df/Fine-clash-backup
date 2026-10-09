@@ -1,4 +1,4 @@
-# fine-clash-unified-v3 | fine-clash-version:20261004110028 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
+# fine-clash-unified-v3 | fine-clash-version:20261004110029 | Fine=validated-pool | Ozon->DIRECT | CN->DIRECT | MATCH->Fine
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -10,264 +10,172 @@ tcp-concurrent: true
 profile:
   store-selected: true
 proxies:
-- ws-opts:
+- cipher: auto
+  server: yg1.ygkkk.dpdns.org
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  tls: true
+  udp: true
+  type: vmess
+  port: 443
+  ws-opts:
     headers:
       Host: jmp1.907737.xyz
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-  alterId: 0
   network: ws
-  server: yg1.ygkkk.dpdns.org
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  tls: true
   name: 🇭🇰 Hong Kong, Hong Kong | [BL] [e9bd72ff]
-  cipher: auto
-  type: vmess
-  port: 443
-  udp: true
-- alterId: 2
-  server: sbgfgov.vip6.wogacnmnagfwgov.com
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  cipher: auto
-  type: vmess
-  port: 11206
-  udp: true
-- ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-  servername: primelinelk.me
-  network: ws
+- servername: primelinelk.me
   server: support.zoom.us
-  encryption: none
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  tls: true
-  name: 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
-  type: vless
   client-fingerprint: safari
-  port: 8443
+  encryption: none
+  tls: true
   udp: true
-- ws-opts:
+  type: vless
+  port: 8443
+  ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-  servername: primelinelk.me
   network: ws
+  name: 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
+- servername: primelinelk.me
   server: support.zoom.us
-  encryption: none
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  client-fingerprint: chrome
+  encryption: none
   tls: true
+  udp: true
+  type: vless
+  port: 8443
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+  network: ws
   name: 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
-  type: vless
-  client-fingerprint: chrome
-  port: 8443
-  udp: true
-- ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-  servername: primelinelk.me
-  network: ws
+- servername: primelinelk.me
   server: support.zoom.us
-  encryption: none
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  tls: true
-  name: 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
-  type: vless
   client-fingerprint: ios
-  port: 8443
+  encryption: none
+  tls: true
   udp: true
-- ws-opts:
+  type: vless
+  port: 8443
+  ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-  servername: primelinelk.me
   network: ws
+  name: 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
+- servername: primelinelk.me
   server: support.zoom.us
-  encryption: none
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  tls: true
-  name: 🇸🇬 Singapore | 🌐 | [BL] [d0f24798]
-  type: vless
   client-fingerprint: edge
-  port: 8443
+  encryption: none
+  tls: true
   udp: true
-- ws-opts:
+  type: vless
+  port: 8443
+  ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-  servername: primelinelk.me
   network: ws
+  name: 🇸🇬 Singapore | 🌐 | [BL] [d0f24798]
+- servername: primelinelk.me
   server: support.zoom.us
-  encryption: none
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  tls: true
-  name: 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
-  type: vless
   client-fingerprint: android
-  port: 8443
+  encryption: none
+  tls: true
   udp: true
-- ws-opts:
+  type: vless
+  port: 8443
+  ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-  servername: primelinelk.me
   network: ws
+  name: 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
+- servername: primelinelk.me
   server: support.zoom.us
-  encryption: none
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  tls: true
-  name: 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
-  type: vless
   client-fingerprint: qq
-  port: 8443
+  encryption: none
+  tls: true
   udp: true
-- ws-opts:
+  type: vless
+  port: 8443
+  ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-  servername: primelinelk.me
   network: ws
+  name: 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
+- servername: primelinelk.me
   server: 170.114.46.6
-  encryption: none
   uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  tls: true
-  name: 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
-  type: vless
   client-fingerprint: chrome
-  port: 8443
-  udp: true
-- servername: fi-s-1.pythonmakemigreat.wiki
-  network: tcp
-  server: 217.60.178.61
-  reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: 78f97d82e16aaad6
   encryption: none
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   tls: true
-  name: 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
-  type: vless
-  client-fingerprint: firefox
-  port: 443
   udp: true
-  flow: xtls-rprx-vision
-- ws-opts:
+  type: vless
+  port: 8443
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+  network: ws
+  name: 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
+- servername: w2p6.vpnpolar.online
+  server: 188.114.97.6
+  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
+  client-fingerprint: chrome
+  encryption: none
+  tls: true
+  udp: true
+  type: vless
+  port: 443
+  ws-opts:
     path: /beeline
     headers:
       Host: w2p6.vpnpolar.online
-  servername: w2p6.vpnpolar.online
   network: ws
-  server: 188.114.97.6
-  encryption: none
-  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
-  tls: true
   name: 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
-  type: vless
-  client-fingerprint: chrome
-  port: 443
+- servername: frc.navid.lat
+  server: cip.navid.lat
+  uuid: 33f13fd5-1553-4574-ac1a-432d2d762cbe
+  client-fingerprint: random
+  encryption: none
+  tls: true
   udp: true
-- ws-opts:
+  type: vless
+  port: 443
+  ws-opts:
     path: /webdl
     headers:
       Host: frc.navid.lat
-  servername: frc.navid.lat
   network: ws
-  server: cip.navid.lat
-  encryption: none
-  uuid: 33f13fd5-1553-4574-ac1a-432d2d762cbe
-  tls: true
   name: 🇫🇷 France, Strasbourg | [BL]
+- servername: buylite.music.apple.com
+  server: 3696b38bsg.murphyweb.sbs
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  reality-opts:
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  client-fingerprint: chrome
+  encryption: none
+  tls: true
+  flow: xtls-rprx-vision
+  udp: true
   type: vless
-  client-fingerprint: random
-  port: 443
-  udp: true
-- type: vless
-  name: 🇫🇷 France, Roubaix | 🌐 | [BL]
-  server: 8.47.69.0
-  port: 2053
-  udp: true
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  encryption: none
-  tls: true
-  servername: fr.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- type: vless
-  name: 美国(yudou99.com 玉豆分享)
-  server: 8.47.69.0
-  port: 2053
-  udp: true
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  encryption: none
-  tls: true
-  servername: vless.api-music-fa.com
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- type: vless
-  name: 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
-  server: www.large-files.info
-  port: 8443
-  udp: true
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  encryption: none
-  tls: true
-  network: ws
-  ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
-- type: vless
-  name: 🇺🇸 United States, Wilmington | [BL] [35ef285a]
-  server: 13.115.139.162
-  port: 443
-  udp: true
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  encryption: none
-  tls: true
-  servername: x.m-90.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- type: vless
-  name: 🇺🇸 United States, Wilmington | [BL] [5452b075]
-  server: 13.231.221.179
-  port: 443
-  udp: true
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  encryption: none
-  tls: true
-  servername: x.m-90.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- type: vless
-  name: 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
-  server: 35.78.243.103
-  port: 443
-  udp: true
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
-  encryption: none
-  tls: true
-  servername: x.m-90.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /t.me/TEAMNETGRATISCOL
-    headers:
-      Host: x.m-90.xyz
-- type: vless
+  port: 32134
+  network: tcp
   name: 🇭🇰 Hong Kong, Hong Kong | [BL] [48b54fe7]
+- type: vless
+  name: 🇭🇰 Hong Kong, Hong Kong | [BL]
   server: 3696b38bsg.murphyweb.sbs
   port: 32134
   udp: true
@@ -276,33 +184,131 @@ proxies:
   tls: true
   servername: buylite.music.apple.com
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
     short-id: 6c6c7c97
   network: tcp
 - type: vless
-  name: 🇸🇬 Singapore, Singapore | 🌐 | [BL]
-  server: 47.251.95.178
-  port: 443
+  name: 🇸🇬 Singapore | 🌐 | [BL] [af94c9e9]
+  server: 170.114.45.6
+  port: 8443
   udp: true
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
   encryption: none
   tls: true
-  servername: asia.csmaster.site
+  servername: primelinelk.me
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /xprolk-primeline
     headers:
-      Host: asia.csmaster.site
+      Host: primelinelk.me
+- type: vless
+  name: 🇸🇬 Singapore | 🌐 | [BL] [56571efa]
+  server: support.zoom.us
+  port: 8443
+  udp: true
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  encryption: none
+  tls: true
+  servername: primelinelk.me
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- type: vless
+  name: 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [227c31aa]
+  server: www.large-files.info
+  port: 8443
+  udp: true
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  encryption: none
+  tls: true
+  servername: www.large-files.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+- type: vless
+  name: 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [1fce8207]
+  server: 172.67.190.248
+  port: 8443
+  udp: true
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  encryption: none
+  tls: true
+  servername: www.large-files.info
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
+- type: vless
+  name: 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [eb0cc022]
+  server: www.large-files.info
+  port: 8443
+  udp: true
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  encryption: none
+  tls: true
+  servername: www.large-files.info
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
+- type: vless
+  name: 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  server: 104.16.111.193
+  port: 443
+  udp: true
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  encryption: none
+  tls: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- type: vless
+  name: 🇹🇭 Thailand, Thap Sakae | [BL] [0bda1b43]
+  server: 104.16.10.185
+  port: 443
+  udp: true
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  encryption: none
+  tls: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- type: vless
+  name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  server: 104.16.10.9
+  port: 443
+  udp: true
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  encryption: none
+  tls: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: GLOBAL
   type: select
   proxies:
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL] [e9bd72ff]
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
   - 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
@@ -310,17 +316,18 @@ proxy-groups:
   - 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
   - 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
   - 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
-  - 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
   - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
   - 🇫🇷 France, Strasbourg | [BL]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL]
-  - 美国(yudou99.com 玉豆分享)
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
-  - 🇺🇸 United States, Wilmington | [BL] [35ef285a]
-  - 🇺🇸 United States, Wilmington | [BL] [5452b075]
-  - 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
   - 🇭🇰 Hong Kong, Hong Kong | [BL] [48b54fe7]
-  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  - 🇭🇰 Hong Kong, Hong Kong | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [af94c9e9]
+  - 🇸🇬 Singapore | 🌐 | [BL] [56571efa]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [227c31aa]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [1fce8207]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [eb0cc022]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [0bda1b43]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   default-selected: 🇭🇰 Hong Kong, Hong Kong | [BL] [e9bd72ff]
 - name: Fine
   type: select
@@ -328,7 +335,6 @@ proxy-groups:
   - AUTO
   - DIRECT
   - 🇭🇰 Hong Kong, Hong Kong | [BL] [e9bd72ff]
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
   - 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
@@ -336,23 +342,23 @@ proxy-groups:
   - 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
   - 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
   - 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
-  - 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
   - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
   - 🇫🇷 France, Strasbourg | [BL]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL]
-  - 美国(yudou99.com 玉豆分享)
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
-  - 🇺🇸 United States, Wilmington | [BL] [35ef285a]
-  - 🇺🇸 United States, Wilmington | [BL] [5452b075]
-  - 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
   - 🇭🇰 Hong Kong, Hong Kong | [BL] [48b54fe7]
-  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  - 🇭🇰 Hong Kong, Hong Kong | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [af94c9e9]
+  - 🇸🇬 Singapore | 🌐 | [BL] [56571efa]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [227c31aa]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [1fce8207]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [eb0cc022]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [0bda1b43]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   default-selected: AUTO
 - name: AUTO
   type: url-test
   proxies:
   - 🇭🇰 Hong Kong, Hong Kong | [BL] [e9bd72ff]
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇸🇬 Singapore | 🌐 | [BL] [1e9fc77c]
   - 🇸🇬 Singapore | 🌐 | [BL] [a8102700]
   - 🇸🇬 Singapore | 🌐 | [BL] [b456c876]
@@ -360,17 +366,18 @@ proxy-groups:
   - 🇸🇬 Singapore | 🌐 | [BL] [1e124b47]
   - 🇸🇬 Singapore | 🌐 | [BL] [04a9d188]
   - 🇸🇬 Singapore | 🌐 | [BL] [bf4642ed]
-  - 🇦🇪 United Arab Emirates, Dubai (Nadd ash Shibā) | [BL]
   - 🌐 Anycast-IP | 🇦🇹 🇬🇧 | [BL]
   - 🇫🇷 France, Strasbourg | [BL]
-  - 🇫🇷 France, Roubaix | 🌐 | [BL]
-  - 美国(yudou99.com 玉豆分享)
-  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL]
-  - 🇺🇸 United States, Wilmington | [BL] [35ef285a]
-  - 🇺🇸 United States, Wilmington | [BL] [5452b075]
-  - 🇺🇸 United States, Wilmington | [BL] [fa71adbf]
   - 🇭🇰 Hong Kong, Hong Kong | [BL] [48b54fe7]
-  - 🇸🇬 Singapore, Singapore | 🌐 | [BL]
+  - 🇭🇰 Hong Kong, Hong Kong | [BL]
+  - 🇸🇬 Singapore | 🌐 | [BL] [af94c9e9]
+  - 🇸🇬 Singapore | 🌐 | [BL] [56571efa]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [227c31aa]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [1fce8207]
+  - 🇩🇪 Germany, Saarbrücken (Mitte) | 🌐 | [BL] [eb0cc022]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [b9ad774f]
+  - 🇹🇭 Thailand, Thap Sakae | [BL] [0bda1b43]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   url: https://play.google.com/store
   interval: 900
   timeout: 8000
